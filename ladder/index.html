@@ -120,20 +120,6 @@
         <div class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    aria-valuenow="6"
-                    style="width: 6%"
-                  >
-                    <span class="">6%</span>
-                  </div>
-                </div>
-              </div>
               <!-- <div class="col-md-4">
                 <div class="card">
                   <div class="header">
@@ -505,6 +491,44 @@
                 </div>
               </div>
 
+              <div class="col-md-6">
+                <div class="card text-center">
+                  <div class="card-header"><br />A little reminder...</div>
+                  <div class="card-body">
+                    <h5 class="card-title text-right">
+                      <blockquote class="blockquote mb-0">
+                        <p>
+                          There is never enough time to enjoy what you love.
+                        </p>
+                        <footer class="blockquote-footer">
+                          Joyce Rachelle
+                        </footer>
+                      </blockquote>
+                    </h5>
+                    <h3 id="countdown" class="card-text"></h3>
+                    <a
+                      href="https://teamup.com/ksgex73g2g2uk5unok"
+                      class="btn btn-primary"
+                      >Book a court</a
+                    >
+                  </div>
+                  <div class="card-footer text-muted"><br /></div>
+                </div>
+                <!-- <div class="card">
+                  <div
+                    class="card-body align-items-center justify-content-center"
+                  >
+                    <h3 class="title">Doubles Ladder</h3>
+                    <p class="category">Here is a subtitle for this table</p>
+
+                    <h2 id="countdown"></h2>
+                     <p class="category">
+                      <i class="fa fa-info-circle text-warning"></i>DN: Number
+                      of days without playing
+                    </p>
+                  </div>
+                </div> -->
+              </div>
               <!--  -->
 
               <!-- <div class="row">
@@ -571,7 +595,37 @@
 
   <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
   <script src="assets/js/demo.js"></script>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date('Dec 25, 2020 23:59:59').getTime()
 
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime()
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24))
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      )
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+      // Output the result in an element with id="demo"
+      document.getElementById('countdown').innerHTML =
+        days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's '
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x)
+        document.getElementById('countdown').innerHTML = 'EXPIRED'
+      }
+    }, 1000)
+  </script>
   <script type="text/javascript">
     $(document).ready(function () {
       demo.initChartist()
@@ -584,7 +638,7 @@
         },
         {
           type: 'info',
-          timer: 2500,
+          timer: 2000,
         }
       )
     })
