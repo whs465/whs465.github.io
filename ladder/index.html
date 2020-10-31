@@ -492,8 +492,10 @@
               </div>
 
               <div class="col-md-6">
-                <div class="card text-center">
-                  <div class="card-header"><br />A little reminder...</div>
+                <div class="card text-center bg-gradient-1 text-white shadow">
+                  <div class="card-header font-weight-bold text-uppercase">
+                    <br />A little reminder...
+                  </div>
                   <div class="card-body">
                     <h5 class="card-title text-right">
                       <blockquote class="blockquote mb-0">
@@ -505,8 +507,7 @@
                         </footer>
                       </blockquote>
                     </h5>
-                    <h3 id="countdown" class="card-text"></h3>
-                    <br />
+                    <h4 id="countdown" class="card-text"></h4>
                     <a
                       href="https://teamup.com/ksgex73g2g2uk5unok"
                       class="btn btn-primary"
@@ -604,6 +605,7 @@
     var x = setInterval(function () {
       // Get today's date and time
       var now = new Date().getTime()
+      var secondstr = ''
 
       // Find the distance between now and the count down date
       var distance = countDownDate - now
@@ -615,10 +617,12 @@
       )
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
       var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+      secondstr = seconds.toString()
+      secondstr = ('0' + secondstr).slice(-2)
 
       // Output the result in an element with id="demo"
       document.getElementById('countdown').innerHTML =
-        days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's '
+        days + 'd ' + hours + 'h ' + minutes + 'm ' + secondstr + 's '
 
       // If the count down is over, write some text
       if (distance < 0) {
