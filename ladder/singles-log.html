@@ -12,7 +12,16 @@
       name="viewport"
     />
     <meta name="viewport" content="width=device-width" />
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -162,8 +171,19 @@
                           ><span data-notify="message"
                             ><strong>2020-11-01</strong> - Fraser Campbell [11]
                             has beaten Maiuran [10] and took their position. The
-                            score: 6-2 6-3.</span
-                          >
+                            score: 6-2 6-3.
+                            <button
+                              type="button"
+                              class="btn btn-info btn-simple btn-xs"
+                              title="Commentary"
+                              data-container="body"
+                              data-toggle="popover"
+                              data-placement="left"
+                              data-content="It was the day after Halloween. The fading rays of the setting sun kissed the foothills of Yeka, where, a first-time duel was about to unfold. Fraser, fresh off this week's win, had challenged Maiuran to a ladder match. Maiuran, opting for the lesser-known 'slow serve' technique got off to a surprising start by winning the first game. The scores went 1-0, 1-1, 2-1, 2-2, and then, with consistently solid serves, plenty of killer backspin, and loads of clinical finishes, Fraser went on to take the first set 6-2. Maiuran put up a bit more of a fight in the second set, but Fraser proved too good with a flourish of cool finishes to win the match 6-2 6-3, and move up a place in the ladder. The crickets chirped and the hyenas howled, and the day was done."
+                            >
+                              <i class="fa fa-comment fa-inverse"></i>
+                            </button>
+                          </span>
                         </div>
                         <div class="alert alert-success alert-with-icon">
                           <span data-notify="icon" class="pe-7s-like2"></span
@@ -172,6 +192,17 @@
                             has beaten Joel Webb [12] and succesfully defended
                             their position. The score: 2-6 7-5 (10-8).</span
                           >
+                          <button
+                            type="button"
+                            class="btn btn-info btn-simple btn-xs"
+                            title="Commentary"
+                            data-container="body"
+                            data-toggle="popover"
+                            data-placement="left"
+                            data-content="10am bank holiday challenge, Joel takes on Fraser to move up one place in the ladder. A strong start from Joel sees him cruise to a 6-2 win in Set 1. Set two is more of a battle. Joel races to a 2-0 lead and later finds himself 5-4. Fraser digs deep with 3 games in a row and takes it to a tie break. Joel again 2-0 up, then 6-4 up. Two chances to take the match. 6-5. 6-6. 7-6 Fraser. 7-7. 8-7 Joel. 8-8. 9-8 Fraser. 10-8. Fraser takes the win and keeps the challenger beneath him."
+                          >
+                            <i class="fa fa-comment fa-inverse"></i>
+                          </button>
                         </div>
                         <div class="alert alert-danger alert-with-icon">
                           <span
@@ -302,9 +333,18 @@
       </div>
     </div>
   </body>
-
+  <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
   <!--   Core JS Files   -->
   <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
   <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
   <!--  Charts Plugin -->
