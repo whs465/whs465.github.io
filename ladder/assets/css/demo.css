@@ -86,7 +86,7 @@
   padding: 20px;
   // background-color: #0cb1c4;
   animation-name: spin;
-  animation-duration: 150000ms;
+  animation-duration: 180000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   /* transform: rotate(3deg); */
