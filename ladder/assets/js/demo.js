@@ -488,7 +488,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [2, 5],
+        data: [2, 6],
       },
     ],
   },
