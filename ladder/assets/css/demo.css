@@ -47,7 +47,8 @@
 .sidebar .nav > li.active-pro {
   position: absolute;
   width: 100%;
-  bottom: 130px;
+  left: 50px;
+  bottom: 50px;
 }
 .sidebar .nav > li.active-pro a {
   background: rgba(255, 255, 255, 0.14);
@@ -89,7 +90,7 @@
   animation-duration: 210000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  /* transform: rotate(3deg); */
+  animation-direction: alternate-reverse;
   /* transform: rotate(0.3rad);/ */
   /* transform: rotate(3grad); */
   /* transform: rotate(.03turn);  */
@@ -100,7 +101,7 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(10deg);
   }
 }
 
