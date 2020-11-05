@@ -467,7 +467,10 @@ if (chLine) {
             },
             ticks: {
               precision: 0,
-              autoSkip: false,
+              callback: function (item, index, items) {
+                if (index === 0) return item
+                if ((index + 1) % 1 === 0) return item
+              },
             },
           },
         ],
