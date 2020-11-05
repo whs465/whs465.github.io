@@ -418,7 +418,7 @@ var chartData = {
     {
       label: 'Singles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 2, 2, 3, 4],
+      data: [0, 0, 1, 1, 1, 2, 2, 3, 5],
       backgroundColor: 'transparent',
       borderColor: colors[0],
       borderWidth: 2,
@@ -488,7 +488,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [2, 4],
+        data: [2, 5],
       },
     ],
   },
