@@ -362,6 +362,51 @@ demo = {
   },
 }
 
+$(document).ready(function () {
+  animateDiv($('.tortu'))
+})
+
+function makeNewPosition($container) {
+  // Get viewport dimensions (remove the dimension of the div)
+  var h = $container.height() - 50
+  var w = $container.width() - 50
+
+  var nh = Math.floor(Math.random() * h)
+  var nw = Math.floor(Math.random() * w)
+
+  return [nh, nw]
+}
+
+function animateDiv($target) {
+  var newq = makeNewPosition($target.parent())
+  var oldq = $target.offset()
+  var speed = calcSpeed([oldq.top, oldq.left], newq)
+
+  $target.animate(
+    {
+      top: newq[0],
+      left: newq[1],
+    },
+    speed,
+    function () {
+      animateDiv($target)
+    }
+  )
+}
+
+function calcSpeed(prev, next) {
+  var x = Math.abs(prev[1] - next[1])
+  var y = Math.abs(prev[0] - next[0])
+
+  var greatest = x > y ? x : y
+
+  var speedModifier = 0.001
+
+  var speed = Math.ceil(greatest / speedModifier)
+
+  return speed
+}
+
 // chart colors
 var colors = ['#007bff', '#28a745', '#333333', '#c3e6cb', '#dc3545', '#6c757d']
 
