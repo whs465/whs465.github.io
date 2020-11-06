@@ -47,7 +47,7 @@
 .sidebar .nav > li.active-pro {
   position: absolute;
   width: 100%;
-  // left: 50px;
+  left: 50px;
   bottom: 50px;
 }
 .sidebar .nav > li.active-pro a {
