@@ -60,11 +60,11 @@
   text-align: center;
 }
 
-@media all and (max-width: 991px) {
-  .sidebar .nav > li.active-pro {
-    // position: initial;
-  }
+// @media all and (max-width: 991px) {
+.sidebar .nav > li.active-pro {
+  position: initial;
 }
+// }
 
 .bg-gradient-1 {
   background: #8e9eab; /* fallback for old browsers */
