@@ -1517,6 +1517,7 @@ fieldset[disabled] .form-control {
 .table > tfoot > tr > td {
   padding: 12px 8px;
   vertical-align: middle;
+  text-align: left;
 }
 
 .table > thead > tr > th {
@@ -1526,6 +1527,10 @@ fieldset[disabled] .form-control {
   color: #9a9a9a;
   font-weight: 400;
   padding-bottom: 5px;
+}
+
+.table > tbody > tr > td > .badge {
+  background-color: #ff4a55;
 }
 
 .table .td-actions .btn {
