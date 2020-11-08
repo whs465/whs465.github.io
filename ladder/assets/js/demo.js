@@ -413,12 +413,12 @@ var colors = ['#007bff', '#28a745', '#333333', '#c3e6cb', '#dc3545', '#6c757d']
 /* large line chart */
 var chLine = document.getElementById('chLine')
 var chartData = {
-  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
   datasets: [
     {
       label: 'Singles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 2, 2, 3, 6],
+      data: [0, 0, 1, 1, 1, 2, 2, 3, 3, 6, 6, 6],
       backgroundColor: 'transparent',
       borderColor: colors[0],
       borderWidth: 2,
@@ -427,7 +427,7 @@ var chartData = {
     {
       label: 'Doubles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 1, 1, 2, 2],
+      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3],
       backgroundColor: colors[3],
       borderColor: colors[1],
       borderWidth: 2,
@@ -491,7 +491,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [3, 5],
+        data: [3, 6],
       },
     ],
   },
