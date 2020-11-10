@@ -442,7 +442,7 @@ var chartData = {
     {
       label: 'Doubles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3],
+      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4],
       backgroundColor: colors[3],
       borderColor: colors[1],
       borderWidth: 2,
@@ -506,7 +506,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [4, 6],
+        data: [5, 6],
       },
     ],
   },
