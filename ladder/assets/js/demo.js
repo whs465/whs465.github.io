@@ -443,7 +443,7 @@ var chartData = {
     {
       label: 'Doubles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 4],
+      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 5],
       backgroundColor: colors[3],
       borderColor: colors[1],
       borderWidth: 2,
@@ -470,7 +470,7 @@ if (chLine) {
               precision: 0,
               callback: function (item, index, items) {
                 if (index === 0) return item
-                if ((index + 1) % 1 === 0) return item
+                if ((index + 1) % 2 === 0) return item
               },
             },
           },
@@ -485,7 +485,7 @@ if (chLine) {
               precision: 0,
               callback: function (item, index, items) {
                 if (index === 0) return item
-                if ((index + 1) % 1 === 0) return item
+                if ((index + 1) % 2 === 0) return item
               },
             },
           },
@@ -507,7 +507,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [5, 6],
+        data: [5, 7],
       },
     ],
   },
