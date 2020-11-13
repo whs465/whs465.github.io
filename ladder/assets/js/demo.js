@@ -430,12 +430,14 @@ var chartData = {
     '14',
     '15',
     '16',
+    '17',
+    '18',
   ],
   datasets: [
     {
       label: 'Singles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 2, 2, 3, 3, 6, 7, 7, 7, 7, 7, 7],
+      data: [0, 0, 1, 1, 1, 2, 2, 3, 3, 6, 7, 7, 7, 7, 7, 7, 7],
       backgroundColor: 'transparent',
       borderColor: colors[0],
       borderWidth: 2,
@@ -444,7 +446,7 @@ var chartData = {
     {
       label: 'Doubles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 5, 5],
+      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 5, 5, 5],
       backgroundColor: colors[3],
       borderColor: colors[1],
       borderWidth: 2,
