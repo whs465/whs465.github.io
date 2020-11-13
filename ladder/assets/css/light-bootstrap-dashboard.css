@@ -1533,6 +1533,18 @@ fieldset[disabled] .form-control {
   background-color: #ff4a55;
 }
 
+.table > tbody > tr > td > .badge1 {
+  background-color: #eec1c4;
+}
+
+.table > tbody > tr > td > .badge2 {
+  background-color: #f3969c;
+}
+
+.table > tbody > tr > td > .badge3 {
+  background-color: #f86d77;
+}
+
 .table .td-actions .btn {
   opacity: 0.36;
   filter: alpha(opacity=36);
