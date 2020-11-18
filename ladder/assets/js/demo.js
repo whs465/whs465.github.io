@@ -435,12 +435,13 @@ var chartData = {
     '19',
     '20',
     '21',
+    '22',
   ],
   datasets: [
     {
       label: 'Singles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 2, 2, 3, 3, 6, 7, 7, 7, 7, 7, 7, 8, 9, 9, 10],
+      data: [0, 0, 1, 1, 1, 2, 2, 3, 3, 6, 7, 7, 7, 7, 7, 7, 8, 9, 9, 11, 11],
       backgroundColor: 'transparent',
       borderColor: colors[0],
       borderWidth: 2,
@@ -449,7 +450,7 @@ var chartData = {
     {
       label: 'Doubles',
       fill: false,
-      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 5, 5, 6, 6, 6, 6],
+      data: [0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4, 5, 5, 6, 6, 6, 6, 6],
       backgroundColor: colors[3],
       borderColor: colors[1],
       borderWidth: 2,
@@ -513,7 +514,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [6, 10],
+        data: [7, 10],
       },
     ],
   },
