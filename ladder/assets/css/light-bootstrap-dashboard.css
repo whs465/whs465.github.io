@@ -211,7 +211,13 @@ body,
 }
 
 body {
-  background: rgba(203, 203, 210, 0.15);
+  background: linear-gradient(
+    to bottom,
+    rgba(170, 58, 56, 0.7) 0%,
+    rgba(47, 115, 54, 0.4) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -372,7 +378,7 @@ input:focus {
 .sidebar .nav .open > a,
 .sidebar .nav li.dropdown .dropdown-menu li:hover > a,
 .sidebar .nav li:hover > a {
-  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgba(47, 115, 54, 0.13);
   opacity: 1;
 }
 
@@ -387,7 +393,7 @@ input:focus {
 .sidebar .nav li.active > a {
   color: #ffffff;
   opacity: 1;
-  background: rgba(255, 255, 255, 0.23);
+  background: rgba(170, 58, 56, 0.35);
 }
 
 .sidebar .nav li.separator {
