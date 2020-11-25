@@ -442,6 +442,7 @@ var chartData = {
     '26',
     '27',
     '28',
+    '29',
   ],
   datasets: [
     {
@@ -475,6 +476,7 @@ var chartData = {
         13,
         13,
         13,
+        13,
       ],
       backgroundColor: 'transparent',
       borderColor: colors[0],
@@ -501,6 +503,7 @@ var chartData = {
         4,
         5,
         5,
+        6,
         6,
         6,
         6,
