@@ -443,6 +443,7 @@ var chartData = {
     '27',
     '28',
     '29',
+    '30',
   ],
   datasets: [
     {
@@ -470,6 +471,7 @@ var chartData = {
         9,
         11,
         11,
+        13,
         13,
         13,
         13,
@@ -515,6 +517,7 @@ var chartData = {
         6,
         6,
         6,
+        7,
       ],
       backgroundColor: colors[3],
       borderColor: colors[1],
@@ -579,7 +582,7 @@ var chPie = new Chart(ctx, {
       {
         backgroundColor: colors,
         borderWidth: 2,
-        data: [8, 11],
+        data: [8, 12],
       },
     ],
   },
