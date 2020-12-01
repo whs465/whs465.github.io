@@ -67,16 +67,16 @@
 // }
 
 .bg-gradient-1 {
-  background: #00f260; /* fallback for old browsers */
+  background: #0cb04a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #0575e6,
-    #00f260
+    #a92921,
+    #0cb04a
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #0575e6,
-    #00f260
+    #a92921,
+    #0cb04a
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

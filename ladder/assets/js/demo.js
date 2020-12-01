@@ -1,35 +1,35 @@
-type = ['', 'info', 'success', 'warning', 'danger']
+type = ['', 'info', 'success', 'warning', 'danger'];
 
 demo = {
   initPickColor: function () {
     $('.pick-class-label').click(function () {
-      var new_class = $(this).attr('new-class')
-      var old_class = $('#display-buttons').attr('data-class')
-      var display_div = $('#display-buttons')
+      var new_class = $(this).attr('new-class');
+      var old_class = $('#display-buttons').attr('data-class');
+      var display_div = $('#display-buttons');
       if (display_div.length) {
-        var display_buttons = display_div.find('.btn')
-        display_buttons.removeClass(old_class)
-        display_buttons.addClass(new_class)
-        display_div.attr('data-class', new_class)
+        var display_buttons = display_div.find('.btn');
+        display_buttons.removeClass(old_class);
+        display_buttons.addClass(new_class);
+        display_div.attr('data-class', new_class);
       }
-    })
+    });
   },
 
   checkScrollForTransparentNavbar: debounce(function () {
-    $navbar = $('.navbar[color-on-scroll]')
-    scroll_distance = $navbar.attr('color-on-scroll') || 500
+    $navbar = $('.navbar[color-on-scroll]');
+    scroll_distance = $navbar.attr('color-on-scroll') || 500;
 
     if ($(document).scrollTop() > scroll_distance) {
       if (transparent) {
-        transparent = false
-        $('.navbar[color-on-scroll]').removeClass('navbar-transparent')
-        $('.navbar[color-on-scroll]').addClass('navbar-default')
+        transparent = false;
+        $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
+        $('.navbar[color-on-scroll]').addClass('navbar-default');
       }
     } else {
       if (!transparent) {
-        transparent = true
-        $('.navbar[color-on-scroll]').addClass('navbar-transparent')
-        $('.navbar[color-on-scroll]').removeClass('navbar-default')
+        transparent = true;
+        $('.navbar[color-on-scroll]').addClass('navbar-transparent');
+        $('.navbar[color-on-scroll]').removeClass('navbar-default');
       }
     }
   }, 17),
@@ -51,7 +51,7 @@ demo = {
         [67, 152, 143, 240, 287, 335, 435, 437, 539, 542, 544, 647],
         [23, 113, 67, 108, 190, 239, 307, 308, 439, 410, 410, 509],
       ],
-    }
+    };
 
     var optionsSales = {
       lineSmooth: false,
@@ -67,7 +67,7 @@ demo = {
       }),
       showLine: false,
       showPoint: false,
-    }
+    };
 
     var responsiveSales = [
       [
@@ -75,14 +75,14 @@ demo = {
         {
           axisX: {
             labelInterpolationFnc: function (value) {
-              return value[0]
+              return value[0];
             },
           },
         },
       ],
-    ]
+    ];
 
-    Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales)
+    Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
 
     var data = {
       labels: [
@@ -103,7 +103,7 @@ demo = {
         [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
         [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695],
       ],
-    }
+    };
 
     var options = {
       seriesBarDistance: 10,
@@ -111,7 +111,7 @@ demo = {
         showGrid: false,
       },
       height: '245px',
-    }
+    };
 
     var responsiveOptions = [
       [
@@ -120,18 +120,18 @@ demo = {
           seriesBarDistance: 5,
           axisX: {
             labelInterpolationFnc: function (value) {
-              return value[0]
+              return value[0];
             },
           },
         },
       ],
-    ]
+    ];
 
-    Chartist.Bar('#chartActivity', data, options, responsiveOptions)
+    Chartist.Bar('#chartActivity', data, options, responsiveOptions);
 
     var dataPreferences = {
       series: [[25, 30, 20, 25]],
-    }
+    };
 
     var optionsPreferences = {
       donut: true,
@@ -142,14 +142,14 @@ demo = {
       axisX: {
         showGrid: false,
       },
-    }
+    };
 
-    Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences)
+    Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
     Chartist.Pie('#chartPreferences', {
       labels: ['62%', '32%', '6%'],
       series: [62, 32, 6],
-    })
+    });
   },
 
   initChartist: function () {
@@ -169,7 +169,7 @@ demo = {
         [67, 152, 143, 240, 287, 335, 435, 437, 539, 542, 544, 647],
         [23, 113, 67, 108, 190, 239, 307, 308, 439, 410, 410, 509],
       ],
-    }
+    };
 
     var optionsSales = {
       lineSmooth: false,
@@ -185,7 +185,7 @@ demo = {
       }),
       showLine: false,
       showPoint: false,
-    }
+    };
 
     var responsiveSales = [
       [
@@ -193,14 +193,14 @@ demo = {
         {
           axisX: {
             labelInterpolationFnc: function (value) {
-              return value[0]
+              return value[0];
             },
           },
         },
       ],
-    ]
+    ];
 
-    Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales)
+    Chartist.Line('#chartHours', dataSales, optionsSales, responsiveSales);
 
     var data = {
       labels: [
@@ -221,7 +221,7 @@ demo = {
         [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
         [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695],
       ],
-    }
+    };
 
     var options = {
       seriesBarDistance: 10,
@@ -229,7 +229,7 @@ demo = {
         showGrid: false,
       },
       height: '245px',
-    }
+    };
 
     var responsiveOptions = [
       [
@@ -238,18 +238,18 @@ demo = {
           seriesBarDistance: 5,
           axisX: {
             labelInterpolationFnc: function (value) {
-              return value[0]
+              return value[0];
             },
           },
         },
       ],
-    ]
+    ];
 
-    Chartist.Bar('#chartActivity', data, options, responsiveOptions)
+    Chartist.Bar('#chartActivity', data, options, responsiveOptions);
 
     var dataPreferences = {
       series: [[25, 30, 20, 25]],
-    }
+    };
 
     var optionsPreferences = {
       donut: true,
@@ -260,18 +260,18 @@ demo = {
       axisX: {
         showGrid: false,
       },
-    }
+    };
 
-    Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences)
+    Chartist.Pie('#chartPreferences', dataPreferences, optionsPreferences);
 
     Chartist.Pie('#chartPreferences', {
       labels: ['62%', '32%', '6%'],
       series: [62, 32, 6],
-    })
+    });
   },
 
   initGoogleMaps: function () {
-    var myLatlng = new google.maps.LatLng(40.748817, -73.985428)
+    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
     var mapOptions = {
       zoom: 13,
       center: myLatlng,
@@ -329,20 +329,20 @@ demo = {
           stylers: [{ visibility: 'simplified' }],
         },
       ],
-    }
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions)
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     var marker = new google.maps.Marker({
       position: myLatlng,
       title: 'Hello World!',
-    })
+    });
 
     // To add the marker to the map, call setMap();
-    marker.setMap(map)
+    marker.setMap(map);
   },
 
   showNotification: function (from, align) {
-    color = Math.floor(Math.random() * 4 + 1)
+    color = Math.floor(Math.random() * 4 + 1);
 
     $.notify(
       {
@@ -358,29 +358,29 @@ demo = {
           align: align,
         },
       }
-    )
+    );
   },
-}
+};
 
 $(document).ready(function () {
-  animateDiv($('.tortu'))
-})
+  animateDiv($('.tortu'));
+});
 
 function makeNewPosition($container) {
   // Get viewport dimensions (remove the dimension of the div)
-  var h = $container.height() - 50
-  var w = $container.width() - 50
+  var h = $container.height() - 50;
+  var w = $container.width() - 50;
 
-  var nh = Math.floor(Math.random() * h)
-  var nw = Math.floor(Math.random() * w)
+  var nh = Math.floor(Math.random() * h);
+  var nw = Math.floor(Math.random() * w);
 
-  return [nh, nw]
+  return [nh, nw];
 }
 
 function animateDiv($target) {
-  var newq = makeNewPosition($target.parent())
-  var oldq = $target.offset()
-  var speed = calcSpeed([oldq.top, oldq.left], newq)
+  var newq = makeNewPosition($target.parent());
+  var oldq = $target.offset();
+  var speed = calcSpeed([oldq.top, oldq.left], newq);
 
   $target.animate(
     {
@@ -389,29 +389,29 @@ function animateDiv($target) {
     },
     speed,
     function () {
-      animateDiv($target)
+      animateDiv($target);
     }
-  )
+  );
 }
 
 function calcSpeed(prev, next) {
-  var x = Math.abs(prev[1] - next[1])
-  var y = Math.abs(prev[0] - next[0])
+  var x = Math.abs(prev[1] - next[1]);
+  var y = Math.abs(prev[0] - next[0]);
 
-  var greatest = x > y ? x : y
+  var greatest = x > y ? x : y;
 
-  var speedModifier = 0.001
+  var speedModifier = 0.001;
 
-  var speed = Math.ceil(greatest / speedModifier)
+  var speed = Math.ceil(greatest / speedModifier);
 
-  return speed
+  return speed;
 }
 
 // chart colors
-var colors = ['#007bff', '#28a745', '#333333', '#c3e6cb', '#dc3545', '#6c757d']
+var colors = ['#0A7533', '#FF3A2F', '#333333', '#c3e6cb', '#dc3545', '#6c757d'];
 
 /* large line chart */
-var chLine = document.getElementById('chLine')
+var chLine = document.getElementById('chLine');
 var chartData = {
   labels: [
     '1',
@@ -448,6 +448,7 @@ var chartData = {
     '32',
     '33',
     '34',
+    '35',
   ],
   datasets: [
     {
@@ -475,6 +476,7 @@ var chartData = {
         9,
         11,
         11,
+        13,
         13,
         13,
         13,
@@ -530,6 +532,7 @@ var chartData = {
         7,
         7,
         7,
+        7,
       ],
       backgroundColor: colors[3],
       borderColor: colors[1],
@@ -537,7 +540,7 @@ var chartData = {
       pointBackgroundColor: colors[1],
     },
   ],
-}
+};
 
 if (chLine) {
   new Chart(chLine, {
@@ -556,8 +559,8 @@ if (chLine) {
               beginAtZero: false,
               precision: 0,
               callback: function (item, index, items) {
-                if (index === 0) return item
-                if ((index + 1) % 2 === 0) return item
+                if (index === 0) return item;
+                if ((index + 1) % 2 === 0) return item;
               },
             },
           },
@@ -571,8 +574,8 @@ if (chLine) {
             ticks: {
               precision: 0,
               callback: function (item, index, items) {
-                if (index === 0) return item
-                if ((index + 1) % 2 === 0) return item
+                if (index === 0) return item;
+                if ((index + 1) % 2 === 0) return item;
               },
             },
           },
@@ -582,10 +585,10 @@ if (chLine) {
         display: true,
       },
     },
-  })
+  });
 }
 
-var ctx = document.getElementById('chPie').getContext('2d')
+var ctx = document.getElementById('chPie').getContext('2d');
 var chPie = new Chart(ctx, {
   type: 'pie',
   data: {
@@ -598,4 +601,4 @@ var chPie = new Chart(ctx, {
       },
     ],
   },
-})
+});

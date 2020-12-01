@@ -2652,6 +2652,11 @@ fieldset[disabled] .form-control {
   margin: 0;
 }
 
+.card-text1 {
+  color: #ddd;
+  font-weight: 400;
+}
+
 .card.card-separator:after {
   height: 100%;
   right: -15px;
