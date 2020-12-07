@@ -453,7 +453,7 @@ var chartData = {
     '37',
     '38',
     '39',
-    '40',
+    '40','41',
   ],
   datasets: [
     {
@@ -498,7 +498,7 @@ var chartData = {
         13,
         13,
         13,
-        13,
+        13,13,
       ],
       backgroundColor: 'transparent',
       borderColor: colors[0],
@@ -547,7 +547,7 @@ var chartData = {
         7,
         7,
         7,
-        7,
+        7,7,
       ],
       backgroundColor: colors[3],
       borderColor: colors[1],
