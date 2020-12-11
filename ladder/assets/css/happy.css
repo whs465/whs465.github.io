@@ -130,7 +130,7 @@
   animation-delay: -1.7s;
 }
 .spiral.one .light {
-  background: #fcfbe9;
+  background: #e3f021;
 }
 .spiral.two {
   -webkit-animation: rotate-tree 7s infinite linear both;
@@ -139,7 +139,7 @@
   animation-delay: -1s;
 }
 .spiral.two .light {
-  background: #e8a41d;
+  background: #c0d123;
 }
 .spiral.three {
   -webkit-animation: rotate-tree 8s infinite linear both;
@@ -148,7 +148,7 @@
   animation-delay: -0.1s;
 }
 .spiral.three .light {
-  background: #f5e393;
+  background: #e1ec20;
 }
 .spiral > .light-wrapper {
   border-radius: 50%;
