@@ -36,7 +36,7 @@
   .qs-squares
   .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover,
 .qs-datepicker-container .qs-squares .qs-square.qs-current {
-  background-color: #00703c !important;
+  background-color: #00521f !important;
 }
 
 .text-primary,
@@ -97,7 +97,7 @@
 .accordion .accordion-button:not(.collapsed),
 .accordion .accordion-item .accordion-button:before,
 #navmenu-nav li.active a {
-  color: #00703c !important;
+  color: #00521f !important;
 }
 
 .btn-primary,
