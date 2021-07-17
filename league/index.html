@@ -1330,9 +1330,18 @@
         if (this.readyState == 4 && this.status == 200) {
           let data = JSON.parse(this.responseText).feed.entry
 
-          let col, i, p, p1, p2, total
+          let col, i, p, p1, p2, total, flag
 
           for (i = 1; i < data.length - 2; i++) {
+            if (typeof data[i]['gsx$_d9ney'] === 'undefined') {
+              flag = ''
+            } else {
+              flag =
+                '<span class="logo-light-mode"><img src="images/' +
+                data[i]['gsx$_d9ney']['$t'] +
+                '_h.gif" class="l-light"  height="10" width="17" alt="" /></span>'
+            }
+
             let pNumber = data[i]['gsx$_cn6ca']['$t']
             let p = data[i]['gsx$_cokwr']['$t']
 
@@ -1341,8 +1350,9 @@
               data[i]['gsx$_cx0b9']['$t'] === '2'
             ) {
               p =
+                flag +
                 p +
-                '<span class="badge rounded-pill bg-success">' +
+                '<span class="badge rounded-pill bg-success ms-1">' +
                 data[i]['gsx$_cx0b9']['$t'] +
                 '</span>'
             }
