@@ -135,9 +135,9 @@ a.text-secondary:focus {
 }
 
 .bg-soft-success {
-  background-color: rgba(46, 202, 139, 0.1) !important;
-  border: 1px solid rgba(46, 202, 139, 0.1) !important;
-  color: #2eca8b !important;
+  background-color: rgba(87, 56, 134, 0.1) !important;
+  border: 1px solid rgba(87, 56, 134, 0.1) !important;
+  color: #573886 !important;
 }
 
 .text-success {
@@ -1107,6 +1107,9 @@ button:not(:disabled) {
   color: #ffffff !important;
 }
 
+.badge.even-short-badge {
+  font-size: 0.6em;
+}
 .dropdown-primary .dropdown-menu .dropdown-item:hover,
 .dropdown-primary .dropdown-menu .dropdown-item.active,
 .dropdown-primary .dropdown-menu .dropdown-item:active,
