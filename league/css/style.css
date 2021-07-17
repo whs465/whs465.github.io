@@ -3803,17 +3803,17 @@ p {
 }
 
 .ribbon.ribbon-primary span {
-  background-color: #2f55d4 !important;
+  background-color: #573886 !important;
 }
 
 .ribbon.ribbon-primary span:before {
-  border-left-color: #2443ac;
-  border-top-color: #2443ac;
+  border-left-color: #4c356e;
+  border-top-color: #4c356e;
 }
 
 .ribbon.ribbon-primary span:after {
-  border-right-color: #2443ac;
-  border-top-color: #2443ac;
+  border-right-color: #4c356e;
+  border-top-color: #4c356e;
 }
 
 .ribbon.ribbon-secondary span {
