@@ -18,7 +18,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -1118,6 +1117,14 @@
                 </script>
                 The Championships Addis Ababa
                 <i class="mdi mdi-heart text-danger"></i>
+                <img
+                  src="images/ETH_h.gif"
+                  class="l-light"
+                  height="16"
+                  width="26"
+                  title="Ethiopia"
+                  alt=""
+                />
               </p>
             </div>
           </div>
@@ -1333,13 +1340,14 @@
           let col, i, p, p1, p2, total, flag
 
           for (i = 1; i < data.length - 2; i++) {
+            flag = ''
             if (typeof data[i]['gsx$_d9ney'] === 'undefined') {
               flag = ''
             } else {
               flag =
                 '<span class="logo-light-mode"><img src="images/' +
                 data[i]['gsx$_d9ney']['$t'] +
-                '_h.gif" class="l-light"  height="10" width="17" alt="" /></span>'
+                '_h.gif" class="l-light" height="10" width="17" alt="" /></span>'
             }
 
             let pNumber = data[i]['gsx$_cn6ca']['$t']
@@ -1350,13 +1358,11 @@
               data[i]['gsx$_cx0b9']['$t'] === '2'
             ) {
               p =
-                flag +
-                p +
+                data[i]['gsx$_cokwr']['$t'] +
                 '<span class="badge rounded-pill bg-success ms-1">' +
                 data[i]['gsx$_cx0b9']['$t'] +
                 '</span>'
             }
-
             col = 1
 
             if (typeof data[i]['gsx$_cpzh4'] === 'undefined') {
@@ -1531,6 +1537,7 @@
               pNumber +
               '</td>' +
               '<td class="text-nowrap">' +
+              flag +
               p +
               '</td>' +
               cellP1 +
