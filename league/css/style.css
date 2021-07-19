@@ -5202,11 +5202,10 @@ p {
 /*# sourceMappingURL=style.css.map */
 
 .marker {
-  background-image: url('/../../images/league/marker.png');
+  background-image: url('../images/marker.png');
   background-size: cover;
   width: 33px;
   height: 50px;
-  // border-radius: 50%;
   cursor: pointer;
 }
 

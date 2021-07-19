@@ -18,6 +18,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -49,24 +50,6 @@
       rel="stylesheet"
     />
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-    <style>
-      .marker {
-        background-image: url('images/league/marker.png');
-        background-size: cover;
-        width: 33px;
-        height: 50px;
-        cursor: pointer;
-      }
-
-      .mapboxgl-popup {
-        max-width: 200px;
-      }
-
-      .mapboxgl-popup-content {
-        text-align: center;
-        font-family: 'Livvic', sans-serif;
-      }
-    </style>
   </head>
 
   <body>
@@ -120,7 +103,7 @@
           <div class="col-lg-10">
             <div class="title-heading text-center">
               <img
-                src="images/league/wimbledon.png"
+                src="images/wimbledon.png"
                 height="280"
                 class="mover"
                 alt=""
@@ -1699,7 +1682,7 @@
               <li class="list-inline-item">
                 <a href="javascript:void(0)"
                   ><img
-                    src="images/payments/habesha.png"
+                    src="images/habesha.png"
                     class="avatar avatar-ex-sm"
                     title="American Express"
                     alt=""
@@ -1708,7 +1691,7 @@
               <li class="list-inline-item">
                 <a href="javascript:void(0)"
                   ><img
-                    src="images/payments/sofi.png"
+                    src="images/sofi.png"
                     class="avatar avatar-ex-sm"
                     title="Discover"
                     alt=""
@@ -1717,7 +1700,7 @@
               <li class="list-inline-item">
                 <a href="javascript:void(0)"
                   ><img
-                    src="images/payments/master-card.png"
+                    src="images/master-card.png"
                     class="avatar avatar-ex-sm"
                     title="Master Card"
                     alt=""
@@ -1726,7 +1709,7 @@
               <li class="list-inline-item">
                 <a href="javascript:void(0)"
                   ><img
-                    src="images/payments/paypal.png"
+                    src="images/paypal.png"
                     class="avatar avatar-ex-sm"
                     title="Paypal"
                     alt=""
@@ -1766,125 +1749,6 @@
     <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
     <script src="js/app.js"></script>
     <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
-    <script>
-      mapboxgl.accessToken =
-        'pk.eyJ1Ijoid2hzNDY1IiwiYSI6ImNrcjF2eGt4ZjFyMmwydHBsZjVwNmhiamUifQ.3f6FDFFgSpxqPUa8gG66Sg'
-      var map = new mapboxgl.Map({
-        container: 'mapid', // container id
-        style: 'mapbox://styles/whs465/ckr1wbjam84eq17mc4tpw4heh', // style URL
-        center: [38.779015, 8.99628], // starting position [lng, lat]
-        zoom: 12, // starting zoom
-      })
-
-      var geojson = {
-        type: 'FeatureCollection',
-        features: [
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.768564, 9.009075],
-            },
-            properties: {
-              title: 'Greek Club',
-              description:
-                '3 clay courts. Restaurant, <strong>beer</strong> and coffee. <br>Coordinates: 9.009075, 38.768564',
-            },
-          },
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.765493, 9.018302],
-            },
-            properties: {
-              title: 'Hilton Hotel',
-              description: '4 clay courts.<br>Coordinates: 9.018302, 38.765493',
-            },
-          },
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.78984, 8.992436],
-            },
-            properties: {
-              title: 'Bole 23 Tennis Club',
-              description: '4 clay courts.<br>Coordinates: 8.992436, 38.789840',
-            },
-          },
-
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.783554, 9.004033],
-            },
-            properties: {
-              title: 'Shala Park',
-              description: '2 clay courts.<br>Coordinates: 9.004033, 38.783554',
-            },
-          },
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.757829, 9.014916],
-            },
-            properties: {
-              title: 'Addis Ababa Tennis Club',
-              description:
-                '5 clay courts. <strong>Beer</strong> and coffee. Parking.<br>Coordinates: 9.014916, 38.757829',
-            },
-          },
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.779015, 8.99628],
-            },
-            properties: {
-              title: 'Bole 19 Tennis Club',
-              description:
-                '3 clay courts. Great ambience, local food, <strong>beer</strong> and coffee. In front of Antica Bar & Restaurant.<br>Coordinates: 8.996280, 38.779015',
-            },
-          },
-          {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [38.795576903032526, 8.989876263478747],
-            },
-            properties: {
-              title: "Pilot's Club",
-              description:
-                '3 courts in good condition.<br>Coordinates: 8.996280, 38.779015',
-            },
-          },
-        ],
-      }
-      // add markers to map
-      geojson.features.forEach(function (marker) {
-        // create a HTML element for each feature
-        var el = document.createElement('div')
-        el.className = 'marker'
-
-        // make a marker for each feature and add to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(marker.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 25 }) // add popups
-              .setHTML(
-                '<h4>' +
-                  marker.properties.title +
-                  '</h4><p>' +
-                  marker.properties.description +
-                  '</p>'
-              )
-          )
-          .addTo(map)
-      })
-    </script>
 
     <script type="text/javascript">
       let xmlhttp = new XMLHttpRequest()
