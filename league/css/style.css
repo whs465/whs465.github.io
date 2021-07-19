@@ -3709,7 +3709,8 @@ p {
 .construction-img {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 35px;
+  width: 330px;
 }
 
 /*********************************/
