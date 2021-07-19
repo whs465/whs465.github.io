@@ -1428,8 +1428,9 @@
               let p = data[i]['gsx$_cokwr']['$t']
 
               if (
-                data[i]['gsx$_cx0b9']['$t'] === '1' ||
-                data[i]['gsx$_cx0b9']['$t'] === '2'
+                (data[i]['gsx$_cx0b9']['$t'] === '1' ||
+                  data[i]['gsx$_cx0b9']['$t'] === '2') &&
+                false //mientras empezamos
               ) {
                 p =
                   data[i]['gsx$_cokwr']['$t'] +
